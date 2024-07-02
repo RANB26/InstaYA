@@ -1,28 +1,11 @@
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
+import HeaderAdmin from '../../components/header/HeaderAdmin';
 
 function Envios_admin() {
     return (
         <div>
-            <header id="header" className="fixed-top">
-                <div className="container d-flex align-items-center justify-content-between">
-
-                <h1 className="logo"><Link to="/">InstaYA</Link></h1>
-                {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-                {/* <!-- <a href="index.html" className="logo"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
-
-                <nav id="navbar" className="navbar">
-                    <ul>
-                        <li><Link className="nav-link scrollto" to="/admin/envios">Envíos</Link></li>
-                        <li><Link className="nav-link scrollto " to="/admin/usuarios">Usuarios</Link></li>
-                        <li><Link className="nav-link scrollto" to="/admin/repartidores">Repartidores</Link></li>
-                        <li><Link className="nav-link scrollto" to="/admin/perfil">Mi perfil</Link></li>
-                        <li><Link className="getstarted scrollto" to="/">Cerrar sesión</Link></li>
-                    </ul>
-                    <i className="bi bi-list mobile-nav-toggle"></i>
-                </nav>{/* <!-- .navbar --> */}
-
-                </div>
-            </header>{/* <!-- End Header --> */}
+            <HeaderAdmin/>
 
             <main id="main">
                 <section className="contact mt-4">
@@ -134,21 +117,8 @@ function Envios_admin() {
                     </div>
                 </div>
                 </section>
-
             </main>{/* <!-- End #main --> */}
-
-            {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
-
-                <div className="container footer-bottom clearfix">
-                <div className="copyright">
-                    &copy; Copyright <strong><span>InstaYA</span></strong>. All Rights Reserved
-                </div>
-                <div className="credits">
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
-                </div>
-            </footer>
+            <Footer/>
         </div>
         
     );
